@@ -1,4 +1,4 @@
-from Point3D import Point3D
+from ModelElements import Point3D
 
 class Poligon:
 
