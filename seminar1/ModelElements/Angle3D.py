@@ -9,7 +9,7 @@ class Angle3D:
         self.__vectorA = vectorA
         self.__vectorB = vectorB
 
-    def get_angle3D(self) -> tuple([Vector3D, Vector3D]):
+    def get_angle3D(self) -> tuple[Vector3D, Vector3D]:
         return (self.__vectorA, self.__vectorB)
 
     def get_angle(self) -> float:

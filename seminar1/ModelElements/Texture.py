@@ -1,8 +1,8 @@
 class Texture:
 
     __counter: int = 1000
-    __id: int()
-    __name: str()
+    __id: int
+    __name: str
 
     def __init__(self, name: str):
         self.__name = name

@@ -5,7 +5,7 @@ class Camera:
     __location: Point3D
     __angle: Angle3D
     __counter: int = 40
-    __id: int()
+    __id: int
 
     def __init__(self, location: Point3D, angle: Angle3D):
         self.__angle = angle

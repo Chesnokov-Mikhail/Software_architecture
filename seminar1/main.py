@@ -1,16 +1,27 @@
-# This is a sample Python script.
+import InMemoryModel as IMM
+import ModelElements as ME
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    observer1 = IMM.Observer("server1")
+    observer2 = IMM.Observer("server2")
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    poligons = ME.Poligon([ME.Point3D(1,2,3)])
+    poligonalModel = ME.PoligonalModel([poligons])
+    models = [poligonalModel]
+
+    angel3D = ME.Angle3D(ME.Vector3D(ME.Point3D(3,4,5),ME.Point3D(2,4,6)),ME.Vector3D(ME.Point3D(3,3,5),ME.Point3D(2,2,6)))
+
+    scene = ME.Scene(poligonalModel,ME.Camera(ME.Point3D(3,2,1),angel3D))
+    scenes = [scene]
+
+    flashes = [ME.Flash(ME.Point3D(4,5,6),angel3D,ME.Color(23,45,67),34)]
+
+    cameras = [ME.Camera(ME.Point3D(4,6,9),angel3D)]
+
+    model_store = IMM.ModelStore(models, scenes, flashes, cameras)
+
+    model_store.registerModelChanger(observer2)
+    model_store.registerModelChanger(observer1)
+
+    model_store.addModel(poligonalModel)
+    model_store.removeModel(poligonalModel)

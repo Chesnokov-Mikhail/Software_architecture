@@ -1,8 +1,8 @@
 class Point3D:
 
-    __x: float()
-    __y: float()
-    __z: float()
+    __x: float
+    __y: float
+    __z: float
 
     def __init__(self, x: float, y: float, z: float):
         self.__x = x

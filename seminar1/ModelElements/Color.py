@@ -1,7 +1,7 @@
 class Color:
-    __red: int()
-    __green: int()
-    __blue: int()
+    __red: int
+    __green: int
+    __blue: int
 
     def __init__(self, red: int, green: int, blue: int):
         self.__red = red

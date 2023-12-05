@@ -6,7 +6,7 @@ class Flash:
     __color: Color
     __power: float
     __counter: int = 30
-    __id: int()
+    __id: int
 
     def __init__(self, location: Point3D, angle: Angle3D, color: Color, power: float):
         self.__color = color
