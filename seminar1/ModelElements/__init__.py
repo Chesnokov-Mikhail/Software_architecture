@@ -7,6 +7,7 @@ from .Angle3D import Angle3D
 from .Color import Color
 from .Flash import Flash
 from .Camera import Camera
+from .Scene import Scene
 
 __all__ = ["Point3D", "Poligon", "Texture", "Vector3D", "PoligonalModel", "Angle3D", "Color",
-           "Flash", "Camera"]
+           "Flash", "Camera", "Scene"]

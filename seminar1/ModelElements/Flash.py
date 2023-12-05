@@ -5,14 +5,21 @@ class Flash:
     __angle: Angle3D
     __color: Color
     __power: float
+    __counter: int = 30
+    __id: int()
+
     def __init__(self, location: Point3D, angle: Angle3D, color: Color, power: float):
         self.__color = color
         self.__power = power
         self.__angle = angle
         self.__location = location
+        self.__id = ++Flash.__counter
 
     def rotate(self, angle: Angle3D):
-        print(f"Rotate Flash {self} to {angle}")
+        print(f"Rotate Flash id = {self.__id} to {angle}")
 
     def move(self, point: Point3D):
-        print(f"Move Flash {self} to {point}")
+        print(f"Move Flash id = {self.__id} to {point}")
+
+    def get_id(self) -> int:
+        return self.__id

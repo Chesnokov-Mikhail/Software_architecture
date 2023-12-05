@@ -1,4 +1,4 @@
-from ModelElements import PoligonalModel, Flash, Camera
+from ModelElements import PoligonalModel, Flash, Camera, Poligon
 
 class Scene:
 
@@ -7,13 +7,13 @@ class Scene:
     __flashes: list([Flash])
     __cameras: list([Camera])
     __id: int()
-    def __init__(self, models: list([PoligonalModel]), flashes: list([Flash]), cameras: list([Camera])):
+    def __init__(self, models: list([PoligonalModel]), cameras: list([Camera]), flashes: list([Flash]) = None):
         self.__cameras = cameras
         self.__flashes = flashes
         self.__models = models
         self.__id = ++Scene.__counter
 
-    def get_id(self):
+    def get_id(self) -> int:
         return self.__id
 
     def get_models(self) -> list([PoligonalModel]):
@@ -24,7 +24,7 @@ class Scene:
 
     def get_cameras(self) -> list([Camera]):
         return self.__cameras
-    
+
     def metod1(self) -> bool:
         print(f"Runing Metod1 Scene id = {self.__id}")
         return True
@@ -32,5 +32,3 @@ class Scene:
     def metod2(self) -> bool:
         print(f"Runing Metod2 Scene id = {self.__id}")
         return True
-
-
