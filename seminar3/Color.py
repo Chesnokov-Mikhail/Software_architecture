@@ -1,6 +1,6 @@
-import enum
-from enum import Enum
-@enum.unique
+from enum import Enum, unique
+@unique
 class Color(Enum):
-    BLACK = 1
-    WHITE = 0
+    BLACK = "black"
+    WHITE = "white"
+    BLUE = "blue"
