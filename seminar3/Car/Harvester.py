@@ -38,3 +38,10 @@ class Harvester(Car):
 
     def switchWipers(self) -> bool:
         print(f'{self.__class__.__name__} включение дворников')
+
+    def sweeping(self):
+        """
+        подметать улицу
+        :return:
+        """
+        print(f"{self.__class__.__name__} автомобиль метет улицу.")

@@ -13,7 +13,7 @@ class SportCar(Car):
         self.wheelsCount = wheelsCount
         self.fuelType = fuelType
         self.gearboxType = gearboxType
-        
+
     @property
     def wheelsCount(self) -> int:
         return super().wheelsCount
