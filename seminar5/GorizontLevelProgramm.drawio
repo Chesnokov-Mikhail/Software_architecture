@@ -1,4 +1,4 @@
-<mxfile host="Electron" modified="2023-12-19T15:57:21.695Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.2 Chrome/114.0.5735.289 Electron/25.9.4 Safari/537.36" etag="4KClgVG8Korw47153IGy" version="22.1.2" type="device">
+<mxfile host="Electron" modified="2023-12-19T16:00:37.616Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.2 Chrome/114.0.5735.289 Electron/25.9.4 Safari/537.36" etag="RfK8zpEEOEPMjXIWyhgW" version="22.1.2" type="device">
   <diagram name="Страница — 1" id="7jG3pcurchbz-cs4vO18">
     <mxGraphModel dx="1020" dy="504" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -72,7 +72,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="q5uiG4KR7IgNaAmEfQ8A-21" value="«interface»&lt;br&gt;&lt;b&gt;Entity&lt;/b&gt;" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="680" y="550" width="110" height="40" as="geometry" />
+          <mxGeometry x="670" y="575" width="110" height="40" as="geometry" />
         </mxCell>
         <mxCell id="q5uiG4KR7IgNaAmEfQ8A-22" value="Model3D" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="530" y="570" width="110" height="50" as="geometry" />
@@ -84,9 +84,9 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="q5uiG4KR7IgNaAmEfQ8A-24" value="Texture" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="640" y="640" width="110" height="50" as="geometry" />
+          <mxGeometry x="670" y="640" width="110" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="q5uiG4KR7IgNaAmEfQ8A-25" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="q5uiG4KR7IgNaAmEfQ8A-24" target="q5uiG4KR7IgNaAmEfQ8A-21">
+        <mxCell id="q5uiG4KR7IgNaAmEfQ8A-25" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="q5uiG4KR7IgNaAmEfQ8A-24" target="q5uiG4KR7IgNaAmEfQ8A-21">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="670" y="620" as="sourcePoint" />
             <mxPoint x="830" y="620" as="targetPoint" />
